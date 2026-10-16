@@ -6,6 +6,8 @@
 #include "Tit-for-TatStrat.h"
 #include <algorithm>
 
+#include "RandomStrat.h"
+
 void Tournament::PopulateStrategy()
 {
     strategies.clear();
@@ -14,6 +16,7 @@ void Tournament::PopulateStrategy()
     strategies.emplace_back(new always_betray_strat("alwaysBetray"));
     strategies.emplace_back(new tit_for_tat_strat("tit_for_tat"));
     strategies.emplace_back(new resentful_strat("resentful"));
+    strategies.emplace_back(new random_strat("randStrat"));
 }
 
 void Tournament::Simulate()
