@@ -1,5 +1,4 @@
 #include <vector>
-#include <assert.h>
 
 /*
  * To analyze satellite images, a geospatial company studies maps of remote ocean regions.
@@ -19,7 +18,7 @@
 
 void RemoveIsland(std::vector<std::vector<char>>& grid, int x, int y)
 {
-    if (x < 0 || x >= grid.size() || y < 0 || y >= grid[0].size()) return;
+    if (x < 0 || x >= grid[0].size() || y < 0 || y >= grid.size()) return;
     if (grid[x][y] == '0')return;
     grid[x][y] = '0';
     RemoveIsland(grid, x-1, y);
@@ -58,10 +57,8 @@ int main()
             {'1','1','0','0'},
             {'1','0','0','0'},
             {'0','0','1','0'},
-            {'1','1','0','1'}
         };
         printf("%d\n",count_islands(grid));
-        //assert(count_islands(grid) == 3);
     }
 
     return 0;
