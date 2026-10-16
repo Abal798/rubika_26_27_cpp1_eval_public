@@ -19,8 +19,8 @@
 void RemoveIsland(std::vector<std::vector<char>>& grid, int x, int y)
 {
     if (x < 0 || x >= grid[0].size() || y < 0 || y >= grid.size()) return;
-    if (grid[x][y] == '0')return;
-    grid[x][y] = '0';
+    if (grid[y][x] == '0')return;
+    grid[y][x] = '0';
     RemoveIsland(grid, x-1, y);
     RemoveIsland(grid, x+1, y);
     RemoveIsland(grid, x, y+1);
@@ -36,7 +36,7 @@ int count_islands(std::vector<std::vector<char>>& grid)
     {
         for (int x=0; x<grid[0].size(); ++x)
         {
-            if (grid[x][y] == '1')
+            if (grid[y][x] == '1')
             {
                 ++count;
                 RemoveIsland(grid, x, y);
@@ -53,11 +53,7 @@ int count_islands(std::vector<std::vector<char>>& grid)
 int main()
 {
     {
-        std::vector<std::vector<char>> grid = {
-            {'1','1','0','0'},
-            {'1','0','0','0'},
-            {'0','0','1','0'},
-        };
+        std::vector<std::vector<char>> grid = {};
         printf("%d\n",count_islands(grid));
     }
 
