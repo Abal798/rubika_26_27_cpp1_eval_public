@@ -6,6 +6,7 @@ struct Ranking
 {
 	std::string StrategyName;
 	int TotalPoint; 
+	int CurrentPoints;
 	int Win;
 	int Draw;
 	int Lose;

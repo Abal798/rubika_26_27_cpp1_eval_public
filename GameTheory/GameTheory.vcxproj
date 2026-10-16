@@ -127,12 +127,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AlwaysBetrayStrat.cpp" />
+    <ClCompile Include="AlwaysCooperateStrat.cpp" />
     <ClCompile Include="GameTheory.cpp" />
+    <ClCompile Include="IStrategy.cpp" />
+    <ClCompile Include="ResentfulStrat.cpp" />
+    <ClCompile Include="Tit-for-TatStrat.cpp" />
+    <ClCompile Include="Tournament.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AlwaysBetrayStrat.h" />
+    <ClInclude Include="AlwaysCooperateStrat.h" />
     <ClInclude Include="Choice.h" />
     <ClInclude Include="IStrategy.h" />
     <ClInclude Include="Ranking.h" />
+    <ClInclude Include="ResentfulStrat.h" />
+    <ClInclude Include="Tit-for-TatStrat.h" />
     <ClInclude Include="Tournament.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
