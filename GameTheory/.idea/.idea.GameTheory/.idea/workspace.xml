@@ -10,6 +10,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/AlwaysBetrayStrat.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AlwaysBetrayStrat.h" root0="FORCE_HIGHLIGHTING" />
@@ -20,6 +23,11 @@
     <setting file="file://$PROJECT_DIR$/Tit-for-TatStrat.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tit-for-TatStrat.h" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ Project.Unnamed.executor": "Run"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="CppProject" factoryName="C++ Project" nameIsGenerated="true">
       <configuration_1 setup="1">
